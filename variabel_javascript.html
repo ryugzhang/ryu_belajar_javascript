@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>Belajar Variabel Javascript</title>
+    </head>
+    <body>
+        <script>
+            // Deklarasi Variabel dalam Javascript
+            var name = "ekokurniadi.com";
+            var visitorCounter = 100;
+            var active = true;
+            let urlWebsite = "http://ekokurniadi.com";
+
+            // Menampilkan Alert dalam website menggunakan Javascript
+            //alert("Selamat Datang di Website " + nama + " terima kasih sudah berkunjung");
+
+            // Menampilkan isi variabel ke halaman website menggunakan Javascript
+            document.write("Nama Situs : " + name + "<br>");
+            document.write("Jumlah Pengunjung Hari ini : " + visitorCounter + "<br>");
+            document.write("Status Keaktifan : " + active + "<br>");
+            document.write("URL Website : " + "<a href=" + urlWebsite + ">" + urlWebsite + "</a>" + "<br>");
+
+            // Mengganti isi variabel name
+            name = 100;
+            document.write("Ubah isi variabel name menjadi angka");
+            document.write("Variable name : " + name + "<br>");
+
+            // Mengganti isi variabel visitorCounter
+            visitorCounter = 9.5;
+            document.write("Ubah isi variabel visitorCounter menjadi desimal");
+            document.write("Variable visitorCounter : " + visitorCounter + "<br>");
+
+            // Penjumlahan Variabel angka dan string
+            document.write("Penjumlahan Variabel angka dan string" + "<br>");
+            var angkaNumber = 10;
+            var angkaString = "10.29";
+            var hasilPenjumlahan = angkaNumber + parseFloat(angkaString);
+            document.write("Hasil Penjumlahan Variabel angka dan string = " + hasilPenjumlahan + "<br>");
+
+            // Membuat variabel array dalam javascript
+            document.write("Membuat variabel array dalam javascript" + "<br>");
+            var arrayUser = ["Jhon", "Robert", "David", "Mark", "Bob", 2, 5, 6, true, false, 10.5, ['a', 'b', 'c']];
+            document.write("Menampilkan nama user urutan ke 0 dalam array => " + arrayUser[0] + "<br>");
+            document.write("Menampilkan nama user urutan ke 1 dalam array => " + arrayUser[1] + "<br>");
+            document.write("Menampilkan nama user urutan ke 2 dalam array => " + arrayUser[2] + "<br>");
+            document.write("Menampilkan nama user urutan ke 3 dalam array => " + arrayUser[3] + "<br>");
+            document.write("Menampilkan nama user urutan ke 4 dalam array => " + arrayUser[4] + "<br>");
+
+            // Menampilkan data array menggunakan perulangan
+            document.write("Menampilkan data array menggunakan perulangan" + "<br>");
+            for (var i = 0; i < arrayUser.length; i++) {
+                document.write("Menampilkan nama user urutan ke " + i + " dalam array => " + arrayUser[i] + "<br>");
+            }
+
+            // Menampilkan data Object
+            document.write("Menampilkan data Object" + "<br>");
+            var object = {
+                "name": "Jhon",
+                "age": 50,
+                "address": "America",
+            }
+            document.write("Menampilkan variable object name => " + object.name + "<br>");
+            document.write("Menampilkan variable object age => " + object.age + "<br>");
+            document.write("Menampilkan variable object address => " + object.address + "<br>");
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Operator Ternary</title>
+    </head>
+    <body>
+        
+        <script>
+            // Deklarasi Variabel
+            var umur = 18;
+            var hasil = "";
+
+            // Operasi Ternary
+            hasil = umur == 18 ? "Anda diperbolehkan Login" : "Anda tidak diperbolehkan Login";
+
+            document.write(`Hasil Operator Ternary <br>`);
+            document.write(hasil + "<br>");
+
+            document.write(`Contoh jika menggunakan if else <br>`);
+            if (umur == 18) {
+                hasil = "Anda diperbolehkan Login";
+            } else {
+                hasil = "Anda tidak diperbolehkan Login";
+            }
+
+            document.write(hasil);
+
+        </script>
+    </body>
+</html>

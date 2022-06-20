@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>Percabangan Switch</title>
+    </head>
+    <body>
+        <script>
+            var pertanyaan = prompt("Masukkan angka 1 sampai 3 untuk mendapatkan hadiah");
+            var hadiah = "";
+
+            switch (pertanyaan) {
+                case "1":
+                    hadiah = "Sepeda";
+                    break;
+                case "2":
+                    hadiah = "Sepatu";
+                    break;
+                case "3":
+                    hadiah = "Buku";
+                    break;
+                default:
+                    hadiah = "";
+                    document.write("<h3>Jawaban anda tidak ditemukan</h3> <br>");
+            }
+
+
+            
+            if (hadiah ==="") {
+                document.write("Hadiah tidak ditemukan");
+            }else{
+                document.write("Selamat anda mendapatkan hadiah " + hadiah + " <br>");
+            }
+        </script>
+    </body>
+</html>

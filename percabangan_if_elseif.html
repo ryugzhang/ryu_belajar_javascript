@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>Percabangan IF / ELSEIF</title>
+    </head>
+    <body>
+        <h3>Menentukan Grade Nilai Siswa</h3>
+        <input type="text" id="nilaiSiswa" placeholder="Nilai Siswa">
+        <button onclick="tentukanGrade();">Tentukan Grade</button>
+        <h3 id="gradeNilai"></h3>
+        <h3 id="pesan"></h3>
+
+        <script>
+            function tentukanGrade() {
+                var nilaiSiswa = document.getElementById("nilaiSiswa").value;
+                var grade = "";
+
+                if (nilaiSiswa >= 90) {
+                    grade = "A";
+                    if (grade == "A") {
+                        document.getElementById("pesan").innerHTML = "Selamat Anda Lulus";
+                    }else{
+                        document.getElementById("pesan").innerHTML = "Maaf anda tidak lulus";
+                    }
+                }else if (nilaiSiswa >= 80 && nilaiSiswa < 90) {
+                    grade = "B+";
+                    if (grade == "B+") {
+                        document.getElementById("pesan").innerHTML = "Selamat Anda Lulus, dengan nilai yang bagus";
+                    }else{
+                        document.getElementById("pesan").innerHTML = "Maaf anda tidak lulus, rajin-rajin belajar";
+                    }
+                }else if (nilaiSiswa >= 70 && nilaiSiswa < 80) {
+                    grade = "B";
+                    if (grade == "B") {
+                        document.getElementById("pesan").innerHTML = "Selamat Anda Lulus, dengan nilai yang cukup";
+                    }else{
+                        document.getElementById("pesan").innerHTML = "Maaf anda tidak lulus, rajin-rajin belajar";
+                    }
+                }else if (nilaiSiswa >= 60 && nilaiSiswa < 70) {
+                    grade = "C";
+                    if (grade == "C") {
+                        document.getElementById("pesan").innerHTML = "Maaf Nilai Anda Kurang baik";
+                    }else{
+                        document.getElementById("pesan").innerHTML = "Maaf anda tidak lulus, rajin-rajin belajar";
+                    }
+                }else {
+                    grade = "D";
+                    if (grade == "D") {
+                        document.getElementById("pesan").innerHTML = "Maaf Anda tidak Lulus";
+                    }
+                }
+
+                document.getElementById("gradeNilai").innerHTML = "Grade nilai siswa " + grade;
+            }
+        </script>
+    </body>
+</html>
