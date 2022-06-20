@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Perulangan Do While</title>
+    </head>
+    <body>
+        <script>
+            var ulang = confirm("Mulai Perulangan Sekarang ?");
+            var nilaiAwal = 0;
+
+            do {
+                nilaiAwal ++;
+                ulang = confirm("Anda ingin Mengulang?");
+            } while (ulang);
+
+            document.write(`Perulangan sudah dilakukan sebanyak ${nilaiAwal}`);
+        </script>
+    </body>
+</html>
