@@ -3,6 +3,22 @@
         <title>Perulangan While</title>
     </head>
     <body>
+
+        <!-- Membuat perulangan menggunaka while dan dialog konfirmasi -->
+        <script>
+            var hasil = confirm("Apakah anda ingin melakukan perulangan ?");
+            var ulang = 0;
+
+            while(hasil){
+                var jawaban = confirm("Apakah anda ingin melakukan perulangan ?");
+                ulang++;
+                if(jawaban == false){
+                    hasil = false;
+                }
+            }
+            document.write(`Anda sudah mengulang sebanyak ${ulang}`);
+        </script>
+
         <script>
             var i = 0;
             while (i<10) {
@@ -10,5 +26,7 @@
                 i++;
             }
         </script>
+
+
     </body>
 </html>
