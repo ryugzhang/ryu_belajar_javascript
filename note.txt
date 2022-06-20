@@ -1,0 +1,10 @@
+1. git init => untuk menginisialisasi github pada project
+2. git remote add origin https://............. => untuk menghubungkan project ke repository
+3. git remote -v => untuk melihat link repository yang terhubung dengan project
+4. git add . => untuk menambahkan seluruh file yang belum ada atau yang terjadi perubahan ke repository
+5. git add nama file => untuk menambahkan sebuah file khusus ke repository
+6. git status => untuk melihat file apa saja yang baru dibuat atau yang mendapatkan perubahan 
+7. git commit -m "isi pesan commit" => untuk memberi komentar pada commit ke repository
+8. git push origin nama branch => untuk mengirim file atau perubahan kedalam repository
+9. git branch nama branch yang ingin dibuat => untuk membuat branch baru pada repository
+10. git checkout nama branch => untuk berpindah ke branch lain
